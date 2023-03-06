@@ -34,4 +34,7 @@ rm FAF5_highway_network_assignments.zip
 
 ## Analyzing highway assignments
 
-The script [Bin_FAF5_Links.py](./source/Bin_FAF5_Links.py) encodes an initial geospatial analysis of the FAF5 highway network assignment data. Follow the [instructions above](#how-to-run-python-scripts) to execute the script in an empty project. This should produce 6 sets of shapefiles in the `data_out`
+The script [Bin_FAF5_Links.py](./source/Bin_FAF5_Links.py) encodes an initial geospatial analysis of the FAF5 highway network assignment data. Follow the [instructions above](#how-to-run-python-scripts) to execute the script in an empty project. This should produce 6 sets of shapefiles in the `data_out` directory:
+* One file (`network_links_all.*`) for all the highway networks, joined with the total freight flows (in tons/year) for each link (variable name of total flows: `Refactored`
+* One file (`network_links_[lower flow]_[upper flow]`) with the network links corresponding to each range of total freight flows
+
