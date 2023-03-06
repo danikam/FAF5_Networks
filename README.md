@@ -38,3 +38,8 @@ The script [Bin_FAF5_Links.py](./source/Bin_FAF5_Links.py) encodes an initial ge
 * One file (`network_links_all.*`) for all the highway networks, joined with the total freight flows (in tons/year) for each link (variable name of total flows: `Refactored`
 * One file (`network_links_[lower flow]_[upper flow]`) with the network links corresponding to each range of total freight flows
 
+The upper and lower bounds of freight flow for each file are defined according to QGIS's `Jenks` classification. Alternative classification methods can be chosen as needed. The sizes of the shapefiles can be determined as follows:
+
+```bash
+ls -lh data_out/network_links_*.shp
+```
